@@ -6,7 +6,8 @@ const Input = () => {
   const [name, setName] = useState<string>("");
   const generate = (name: string) => {
     if (name.length <= 0) {
-      alert("Please enter your github username");
+      const dialog=document.getElementById('my_modal_3');
+      dialog?.showModal();
       return;
     }
     router.push(`/${name}`);

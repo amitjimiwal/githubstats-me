@@ -3,7 +3,7 @@ import { Anton} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
+import Modal from "@/components/Modal";
 const inter =Anton({
   weight: '400',
   subsets: ['latin'],
@@ -26,6 +26,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Modal />
       </body>
     </html>
   );
