@@ -23,7 +23,7 @@ const Content = ({ data }: { data: UserSuccessStats }) => {
   };
   return (
     <section>
-      <div className="shadow-2xl p-4  " ref={ref}>
+      <div className="shadow-2xl p-4 bg-[#18181B]" ref={ref}>
         <h1 className="text-2xl sm:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-br from-lime-200 to-green-600 animate-text via-green-100 text-center">
           #Your Github Recap 2023 🎉
         </h1>
