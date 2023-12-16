@@ -7,8 +7,8 @@ const ErrorBox = () => {
           <div className="m-auto text-center">
             <div className="sm:w-full flex justify-center">
               <svg
-                width="350"
-                height="500"
+                width="260"
+                height="400"
                 viewBox="0 0 631 379"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -265,7 +265,7 @@ const ErrorBox = () => {
                 </defs>
               </svg>
             </div>
-            <p className="text-sm md:text-base text-yellow-300 p-2 mb-4">
+            <p className="text-sm sm:text-2xl text-yellow-300 p-2 mb-4">
               The User you were looking for doesn&apos;t exist
             </p>
             <a
