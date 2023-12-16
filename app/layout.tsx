@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import { Anton} from "next/font/google";
+import { Anton } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Modal from "@/components/Modal";
-const inter =Anton({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap',
-})
+import GoogleAnalytics from "@bradgarropy/next-google-analytics";
+const inter = Anton({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Github Wrapped",
@@ -23,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <GoogleAnalytics measurementId="G-DTL3T2BXFQ"/>
         <Navbar />
         {children}
         <Footer />

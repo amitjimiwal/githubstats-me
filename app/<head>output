@@ -1,2 +1,10 @@
 <link rel="icon" href="/icon.png" type="image/png" sizes="32x32" />
 <script async src="https://platform.twitter.com/widgets.js"></script>
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-5PFR5Q7W"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
