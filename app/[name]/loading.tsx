@@ -1,6 +1,6 @@
 const loading = () => {
   return (
-    <div className="w-full h-1/2 flex mt-2.5 justify-center">
+    <div className="w-full h-screen flex flex-col -mt-20 justify-center text-center p-5">
       <div className="text-3xl">
         Loading your Wrap{" "}
         <span className="loading loading-ball loading-xs"></span>

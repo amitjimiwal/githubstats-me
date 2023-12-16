@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "assets/utils.ts"
+    "assets/api.ts"
   ],
   "exclude": ["node_modules"]
 }

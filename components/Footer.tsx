@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="w-full text-xl text-center fixed bottom-0 text-white bg-black bg-opacity-25 p-3">
+    <div className="w-full text-xl text-center text-white p-3 h-auto">
       Made with ❤️ by {" "}
       <a
         href="https://github.com/amitjimiwal"

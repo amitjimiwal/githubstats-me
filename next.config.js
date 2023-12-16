@@ -6,6 +6,14 @@ const nextConfig = {
         protocol: "https",
         hostname: "cdn.buymeacoffee.com",
       },
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+      },
+      {
+        protocol:"https",
+        hostname:"github-readme-stats.vercel.app"
+      }
     ],
   },
 };

@@ -6,14 +6,16 @@ const Navbar = () => {
   return (
     <section className="navbar">
       <div className="flex w-full  text-white p-4 justify-between items-center">
-        <div className="cursor-pointer text-4xl hover:text-red-400">
-          <TbBrandGithub />
-        </div>
+        <Link href="/">
+          <div className="cursor-pointer text-4xl hover:text-red-400">
+            <TbBrandGithub />
+          </div>
+        </Link>
         <div className="flex items-center gap-2">
           <div>
             <button className="btn btn-ghost text-xl">
               <a
-                href="https://github.com/amitjimiwal"
+                href="https://github.com/amitjimiwal/Github-Wrapped"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -25,8 +27,8 @@ const Navbar = () => {
             <Image
               src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
               alt="Buy Me A Coffee"
-              width={150} // Set the width
-              height={60} // Set the height
+              width={150}
+              height={60} 
             />
           </Link>
         </div>
