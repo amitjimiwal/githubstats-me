@@ -5,7 +5,7 @@ import ErrorBox from "@/components/ErrorBox";
 export default async function Home({ params }: { params: { name: string } }) {
   const data: UserStats = await getAllData(params.name);
   return (
-    <section className="w-full h-[91vh] flex flex-col  items-center ">
+    <section className="min-w-screen min-h-[91vh] flex flex-col  items-center ">
       {!data.user ? (
         <>
           <ErrorBox />
