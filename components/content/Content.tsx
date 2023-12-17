@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import { toPng } from "html-to-image";
 import Image from "next/image";
 import { UserSuccessStats } from "@/assets/interfaces/UserData";
+import ContributionChart from "../ContributionChart";
 
 const Content = ({ data }: { data: UserSuccessStats }) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -22,7 +23,7 @@ const Content = ({ data }: { data: UserSuccessStats }) => {
       });
   };
   return (
-    <section>
+    <section className="w-full sm:w-auto">
       <div className="shadow-2xl p-4 bg-[#18181B]" ref={ref}>
         <h1 className="text-2xl sm:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-br from-lime-200 to-green-600 animate-text via-green-100 text-center">
           #Your Github Recap 2023 🎉
@@ -80,14 +81,18 @@ const Content = ({ data }: { data: UserSuccessStats }) => {
           </div>
         </div>
         {/* Highlights */}
-        <div className="mx-auto bg-transparent rounded-lg shadow-md p-6 mt-4">
-          <h1 className="text-[#FFE382] text-lg sm:text-3xl mb-4 text-center ">
+        <div className="mx-auto bg-transparent rounded-lg p-6 mt-4">
+          <h1 className="text-[#FFE382] text-lg sm:text-3xl mb-4 text-left ">
+            Highlights
+          </h1>
+          <h1 className="text-[#FFE382] text-lg sm:text-xl mb-4 text-center ">
             Most Active Month
           </h1>
-          <p className="text-white text-center text-xl sm:text-2xl ">
+          <p className="text-white text-center text-sm sm:text-xl ">
             {data.mostActiveMonth}
           </p>
         </div>
+        <ContributionChart contribution={data.contributionsByMonth}/>
         <p className="text-center font-thin mt-3">githubwrapped.app</p>
       </div>
       {/* buttons */}
@@ -117,6 +122,7 @@ const Content = ({ data }: { data: UserSuccessStats }) => {
             ></script>
           </button>
         </div>
+     
       </div>
     </section>
   );

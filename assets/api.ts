@@ -100,7 +100,6 @@ export async function getAllData(username: string) {
                     contributionsByMonth[month] = day.contributionCount;
                }
           });
-
           let mostActiveMonth = '';
           let maxContributions = 0;
           for (const month in contributionsByMonth) {
