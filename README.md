@@ -50,7 +50,7 @@ The application will now be running on your local machine at http://localhost:30
 
 ## Contribution
 
-We welcome contributions to enhance the functionality and usability of the Project To-Do List Manager. If you'd like to contribute, follow these steps:
+We welcome contributions to enhance the functionality and usability of the Project Github Wrapped. If you'd like to contribute, follow these steps:
 
 1. Fork the repository from the GitHub page: [https://github.com/amitjimiwal/Github-Wrapped](https://github.com/amitjimiwal/Github-Wrapped)
 
@@ -81,18 +81,6 @@ We appreciate your contributions, and together, we can make the Github Wrapped e
 ## License
 
 The Github Wrapped is licensed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to use, modify, and distribute the software as per the terms of the license.
-
-## Workflows
-
-We have set up the following GitHub workflows to streamline development:
-
-- **Continuous Integration (CI)**: This workflow runs on every pull request and checks the code for errors, style issues, and test failures to ensure code quality.
-
-- **Automatic Deployment**: Once changes are merged into the `main` branch, this workflow automatically deploys the application to our production server.
-
-Both workflows are configured to ensure a smooth development and deployment process.
-
-Please feel free to check the `/.github/workflows` directory for more details on the workflows.
 
 # 
 
