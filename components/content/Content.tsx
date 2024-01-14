@@ -93,7 +93,7 @@ const Content = ({ data }: { data: UserSuccessStats }) => {
           </p>
         </div>
         <ContributionChart contribution={data.contributionsByMonth}/>
-        <p className="text-center font-thin mt-3">githubwrapped.app</p>
+        <p className="text-center font-thin mt-3">github-wrapped.vercel.app</p>
       </div>
       {/* buttons */}
       <div className="flex items-center justify-center gap-6 ">
