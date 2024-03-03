@@ -1,4 +1,4 @@
-import { UserStats } from "@/assets/interfaces/UserData";
+import { UserStats } from "@/assets/types/UserData";
 import { getAllData } from "../../assets/api";
 import Content from "@/components/content/Content";
 import ErrorBox from "@/components/ErrorBox";

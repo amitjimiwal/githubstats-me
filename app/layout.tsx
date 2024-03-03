@@ -24,7 +24,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <GoogleAnalytics measurementId="G-DTL3T2BXFQ"/>
+        <GoogleAnalytics measurementId="G-DTL3T2BXFQ" />
+        {/* only display on home page */}
         <Navbar />
         {children}
         <Footer />

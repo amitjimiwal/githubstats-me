@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <div className="w-full text-xl text-center text-white p-3 h-auto">
-      Made by {" "}
+    <div className="text-xl  text-white p-3 h-auto fixed left-0 bottom-0">
+      Made by{" "}
       <a
         href="https://github.com/amitjimiwal"
         target="_blank"

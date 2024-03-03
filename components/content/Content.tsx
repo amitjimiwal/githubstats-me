@@ -2,7 +2,7 @@
 import { useRef, useState } from "react";
 import { toPng } from "html-to-image";
 import Image from "next/image";
-import { UserSuccessStats } from "@/assets/interfaces/UserData";
+import { UserSuccessStats } from "@/assets/types/UserData";
 import ContributionChart from "../ContributionChart";
 
 const Content = ({ data }: { data: UserSuccessStats }) => {
@@ -75,7 +75,9 @@ const Content = ({ data }: { data: UserSuccessStats }) => {
               </p>
             </div>
             <div className="text-center">
-              <p className="text-blue-500 text-xl sm:text-4xl">{data.totalPR}</p>
+              <p className="text-blue-500 text-xl sm:text-4xl">
+                {data.totalPR}
+              </p>
               <p className="text-[#a19e9e] text-sm sm:text-2xl">Total PR</p>
             </div>
           </div>
@@ -92,8 +94,8 @@ const Content = ({ data }: { data: UserSuccessStats }) => {
             {data.mostActiveMonth}
           </p>
         </div>
-        <ContributionChart contribution={data.contributionsByMonth}/>
-        <p className="text-center font-thin mt-3">github-wrapped.vercel.app</p>
+        <ContributionChart contribution={data.contributionsByMonth} />
+        <p className="text-center font-thin mt-3">githubstats-me.vercel.app</p>
       </div>
       {/* buttons */}
       <div className="flex items-center justify-center gap-6 ">
@@ -122,7 +124,6 @@ const Content = ({ data }: { data: UserSuccessStats }) => {
             ></script>
           </button>
         </div>
-     
       </div>
     </section>
   );
