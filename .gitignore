@@ -6,6 +6,7 @@
 .pnp.js
 constant.json
 .yarn/install-state.gz
+.env.local
 
 # testing
 /coverage
@@ -19,7 +20,7 @@ constant.json
 # misc
 .DS_Store
 *.pem
-.env
+
 # debug
 npm-debug.log*
 yarn-debug.log*
